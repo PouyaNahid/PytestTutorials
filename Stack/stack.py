@@ -34,7 +34,9 @@ class Stack:
 
 
     def pop(self) -> int:
-
+        
+        if self.is_empty():
+            raise IndexError('The Stack is empty')
         return self.__items.pop()
 
 
