@@ -43,12 +43,16 @@ class Stack:
 
     def pop(self) -> int:
 
+        if self.is_empty():
+            raise IndexError('The Stack is empty')
         # Removes and returns the item from the top of the stack.
         return self.__items.pop()
 
 
     def top(self) -> int:
 
+        if self.is_empty():
+            raise IndexError('The Stack is empty')
         # Returns the item at the top of the stack without removing it.
         return self.__items[-1]
 
