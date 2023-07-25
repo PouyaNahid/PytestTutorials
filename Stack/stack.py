@@ -31,3 +31,13 @@ class Stack:
             self.__items.append(item)
         else:
             raise OverflowError('Stack Overflow Error')
+
+
+    def pop(self) -> int:
+
+        return self.__items.pop()
+
+
+    def top(self) -> int:
+
+        return self.__items[-1]
