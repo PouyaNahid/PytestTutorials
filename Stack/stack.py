@@ -41,3 +41,14 @@ class Stack:
     def top(self) -> int:
 
         return self.__items[-1]
+
+
+    def __repr__(self) -> str:
+        return f'{self.__class__.__name__}()'
+
+
+    def __str__(self) -> str:
+        items = f'{self.__items}'
+
+        # somthing like : Stack(2, 3, 4, 8) will be return because [1:-1] returns just values without prantheses.
+        return f'{self.__class__.__name__}({items[1:-1]})'
