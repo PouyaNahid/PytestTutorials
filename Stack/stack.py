@@ -1,6 +1,9 @@
+import sys
+
+
 class Stack:
 
-    STACK_CAPACITY = 10
+    STACK_CAPACITY = 10_000
 
     def __init__(self) -> None:
 
@@ -70,3 +73,7 @@ class Stack:
 
         # somthing like : Stack(2, 3, 4, 8) will be return because [1:-1] returns just values without prantheses.
         return f'{self.__class__.__name__}({items[1:-1]})'
+
+
+if __name__ == '__main__':
+    print(sys.version_info)
